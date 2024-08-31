@@ -9027,6 +9027,17 @@ POPUP FORM
 	margin-left: 210px;
     }
     
+    @media (max-width: 768px) {
+		.hero-2 .hero-2-item .hero-2-content h1 {
+			font-size: 30px; /* smaller font size for mobile screens */
+			margin-top: -80px; /* adjust top margin for better spacing */
+			width: 100%; /* full width for mobile */
+			text-align: center; /* keep text centered */
+			margin-left: 0; /* remove left margin for mobile view */
+			padding: 0 20px; /* add padding for better mobile readability */
+		}
+	}
+
     .hero-2 .hero-2-item .hero-2-content p {
 	margin-bottom: 0;
     }
