@@ -9036,6 +9036,9 @@ POPUP FORM
 			margin-left: 0; /* remove left margin for mobile view */
 			padding: 0 20px; /* add padding for better mobile readability */
 		}
+		.hero-2-item{
+			height: 210px;
+		}
 	}
 
     .hero-2 .hero-2-item .hero-2-content p {
