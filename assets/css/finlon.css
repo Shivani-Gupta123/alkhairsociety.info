@@ -1678,7 +1678,7 @@ h6 {
 
 @media (max-width: 475px) {
 	.main-menu__btn {
-		display: none;
+		display: block;
 	}
 }
 
