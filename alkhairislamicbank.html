@@ -218,6 +218,29 @@
                             
                         </div>
                     </div>
+
+                    <script>
+                        function sendToWhatsApp() {
+                            // Get the values from the form
+                            var fullName = document.getElementById('full-name').value;
+                            var email = document.getElementById('email').value;
+                            var phone = document.getElementById('phone').value;
+                            var loanAmount = document.getElementById('loan-amount').value;
+                            var state = document.getElementById('state').value;
+                            
+                            // WhatsApp number to send the message to (include country code, e.g., +91 for India)
+                            var whatsappNumber = "+918274047067"; // Change this to the actual WhatsApp number
+                            
+                            // Create the message
+                            var message = `Hello, I would like to apply for a loan.\n\nFull Name: ${fullName}\nEmail: ${email}\nPhone: ${phone}\nLoan Amount: ${loanAmount}\nState: ${state}`;
+                            
+                            // Construct the WhatsApp URL
+                            var whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+                            
+                            // Redirect to WhatsApp
+                            window.open(whatsappURL, '_blank');
+                        }
+                        </script>
                     <!-- /col -->
                     <!-- col -->
                     <script charset="utf-8" type="text/javascript" src="../js-eu1.hsforms.net/forms/embed/v2.js"></script>
